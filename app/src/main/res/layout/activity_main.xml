@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E35B"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="349dp"
+        android:layout_height="705dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/textv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/fill_the_form"
+            android:textColor="@color/red"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/editt1"
+            android:layout_width="242dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/textv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/forbutton"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_your_name_here"
+            android:inputType="textPersonName"
+            android:textColor="@color/red"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/select_gender"
+            android:textColor="@color/red"
+            android:textSize="23sp" />
+
+        <RadioGroup
+            android:id="@+id/radg1"
+            android:layout_width="150dp"
+            android:layout_height="126dp"
+            android:layout_below="@+id/textv1"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/rad1"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/female"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rad2"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/male"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkb1"
+            android:layout_width="268dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/radg1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/forcheck"
+            android:text="@string/i_agree_to_the_terms_and_conditions"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="149dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/checkb1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/submit"
+            android:textColor="@color/red"
+            app:backgroundTint="#C4F1DC96"
+            app:backgroundTintMode="src_atop" />
+    </RelativeLayout>
+
+</RelativeLayout>

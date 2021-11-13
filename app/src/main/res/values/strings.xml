@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Caquesno2</string>
+    <string name="fill_the_form">Fill the Form</string>
+    <string name="enter_your_name_here">Enter Your Name Here</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="submit">Submit</string>
+    <string name="i_agree_to_the_terms_and_conditions">I agree to the terms and conditions</string>
+
+
+</resources>
